@@ -13,11 +13,11 @@ app.get("/" , function(req,res){
 
     if(currentDay === 6 || currentDay === 0){
         day = "Weekend";
-        res.render("list",{kindOfDay: day});
     }else{
         day = "Weekday";
-        res.render("list",{kindOfDay: day});
     };
+
+    res.render("list",{kindOfDay: day});
 });
 
 
